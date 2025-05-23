@@ -1,0 +1,277 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>哔哔音乐（PC+安卓）下载 - 免费全网音乐播放下载神器 PC+安卓双端支持</title>
+    <meta name="description" content="哔哔音乐是一款由大佬开发的免费音乐软件，将B站音乐功能开发成独立应用，支持PC和安卓双端，能听全网歌曲并直接下载，无需付费会员。界面简洁，操作简单，还能听书，是应对版权音乐收费的完美解决方案！">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        :root {
+            --primary-color: #1DB954; /* 绿色系，适合音乐APP主题 */
+            --secondary-color: #f8f9fa; /* Light grey */
+            --accent-color: #1ED760; /* 浅绿色，用于悬停效果 */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://pic1.imgdb.cn/item/67c0250dd0e0a243d40719a1.jpg'); /* Placeholder, replace with Music theme image */
+            background-position: center center;
+            background-size: cover;
+            color: white;
+            padding: 120px 0;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .testimonial-card {
+            border-left: 4px solid var(--primary-color);
+        }
+        .download-section {
+            background-color: var(--secondary-color);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+        }
+        .btn-outline-light:hover {
+            color: var(--primary-color);
+        }
+        .feature-box {
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .feature-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .anime-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            background-color: rgba(29, 185, 84, 0.1); /* Adjusted for new primary color */
+            color: var(--primary-color);
+            margin-right: 8px;
+            margin-bottom: 8px;
+            font-size: 14px;
+            border: 1px solid var(--primary-color);
+        }
+        .usage-tips-section {
+            background-color: #E6FAF0; /* Light green background */
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--primary-color);
+        }
+        .usage-tips-section h5 {
+            color: var(--primary-color);
+        }
+        .usage-tips-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .usage-tips-section ul li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .usage-tips-section ul li i {
+            color: var(--primary-color);
+            margin-right: 10px;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">哔哔音乐</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">软件介绍</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">功能特点</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#usage-tips">使用技巧</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#download">立即下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">哔哔音乐 - 免费全网音乐播放下载神器</h1>
+            <p class="lead mb-5">支持PC和安卓双端，听全网歌曲无需付费<br>一键下载到本地，随时离线收听！</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#download" class="btn btn-primary btn-lg px-4 py-2">立即下载APP</a>
+                <a href="#features" class="btn btn-outline-light btn-lg px-4 py-2">查看特色功能</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <!-- 哔哔音乐截图 -->
+                    <img src="https://www.hefentv.cn/wp-content/uploads/2024/10/1-1728723663.png" alt="哔哔音乐界面预览" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">哔哔音乐软件介绍</h2>
+                    <p class="lead">哔哔音乐是一位大佬的新作品，将B站的音乐功能开发成了独立软件，支持安卓和PC端。</p>
+                    <p class="mb-4">现在很多版权歌曲都需要付费才能听，虽然对于"搞机"达人来说，第三方软件多得是，像洛雪、魔音、音乐搜索这些都挺好用，但哔哔音乐不仅能听全网歌曲，还能直接下载，是免费音乐爱好者的福音！</p>
+
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3">核心优势</h5>
+                        <span class="anime-badge">免费无会员</span>
+                        <span class="anime-badge">PC+安卓双端</span>
+                        <span class="anime-badge">全网音乐</span>
+                        <span class="anime-badge">一键下载</span>
+                        <span class="anime-badge">绿色免安装</span>
+                        <span class="anime-badge">简洁界面</span>
+                        <span class="anime-badge">听书功能</span>
+                        <span class="anime-badge">离线收听</span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-music text-success me-2"></i>
+                        <span>免费听全网歌曲，无需付费会员</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-download text-success me-2"></i>
+                        <span>一键下载到本地，随时离线收听</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-laptop text-success me-2"></i>
+                        <span>支持PC和安卓双端，满足多设备使用需求</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-cog text-success me-2"></i>
+                        <span>绿色免安装，解压即用，简单方便</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">功能特点</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-desktop feature-icon"></i>
+                                <h4 class="card-title fw-bold">简洁界面</h4>
+                            </div>
+                            <p class="card-text">打开软件，界面超级简洁，主要有搜索、广场、歌单和设置几个按钮，使用起来很简单，直接在搜索框输入歌曲名或歌手名就行。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-search feature-icon"></i>
+                                <h4 class="card-title fw-bold">全网搜索</h4>
+                            </div>
+                            <p class="card-text">比如搜"周杰伦"，瞬间弹出一堆结果；再试试搜"夜曲"，结果更惊艳。这些音乐来自不同UP主上传，同一个歌可能有好几个版本。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-download feature-icon"></i>
+                                <h4 class="card-title fw-bold">一键下载</h4>
+                            </div>
+                            <p class="card-text">软件虽然界面简陋了点，也没有专门的歌词页面，但胜在能一键下载到本地，随时离线收听！下载的时候记得看好路径，默认下载到C盘的Downloads文件夹。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-cog feature-icon"></i>
+                                <h4 class="card-title fw-bold">简易安装</h4>
+                            </div>
+                            <p class="card-text">下载解压后，找到bbmusic.exe双击运行就行，不需要复杂的安装步骤，简直是懒人福音！解压后能看到这些文件，都是软件运行所需的，不用管太多，直接打开主程序就好。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card feature-box border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-book feature-icon"></i>
+                                <h4 class="card-title fw-bold">听书功能</h4>
+                            </div>
+                            <p class="card-text">这软件不止能听歌，用来听书也巨好用！搜"剑来"试试，你会发现很多优质资源。这个隐藏功能让软件的实用性大大提升，一举两得。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="usage-tips" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">使用技巧</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="usage-tips-section">
+                        <p class="text-center mb-3"><strong>哔哔音乐软件总结：</strong></p>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>现在版权意识越来越强，听歌基本都要付费，能有这么一款免费听全网歌曲的软件真的不容易。虽然它界面简单，音质也有好有坏，但胜在免费又方便，还能下载到本地，还要啥自行车啊！</p>
+                                <p>需要注意的是，这些音乐来自不同UP主上传，同一个歌可能有好几个版本，音质也参差不齐。和专业音乐软件相比，音质还是有差距的，大家听的时候可以自己挑一挑，选音质好的版本听。</p>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">如果你也厌倦了各种音乐软件的会员限制，那就快来下载哔哔音乐，享受自由的音乐世界吧！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">立即下载 哔哔音乐</h2>
+            <p class="lead mb-5">免费全网音乐播放下载神器<br>PC+安卓双端支持，一键下载，离线收听</p>
+            <!-- TODO: Update download links and official website URL -->
+            <a href="https://music-l2f.pages.dev" class="btn btn-primary btn-lg px-5 py-3 me-3 mb-3"><i class="fas fa-download me-2"></i>下载哔哔音乐</a>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 哔哔音乐. All Rights Reserved.</p>
+            <p class="small text-muted mt-1">本站仅提供应用介绍和信息分享，下载资源及链接来自互联网，版权归原作者所有。如有侵权，请联系我们删除。</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
